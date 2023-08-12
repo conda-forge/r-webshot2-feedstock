@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/webshot2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/webshot2/webshot2_{{ version }}.tar.gz
-  sha256: bc76716c209e9fbca5986f65e0bdecbb1a75463bb6ae95938b3c40e2278dc58b
+  sha256: 9b6e5be6cc6ffc924c85dbed00f72d44c81c2f2e9e3ec9528bdd1aeea21884c4
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -47,8 +47,7 @@ test:
 about:
   home: https://github.com/rstudio/webshot2
   license: GPL-2.0-only
-  summary: Takes screenshots of web pages, including Shiny applications and R Markdown documents.
-    'webshot2' uses headless Chrome or Chromium as the browser back-end.
+  summary: Takes screenshots of web pages, including Shiny applications and R Markdown documents. 'webshot2' uses headless Chrome or Chromium as the browser back-end.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
