@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/webshot2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/webshot2/webshot2_{{ version }}.tar.gz
-  sha256: 9b6e5be6cc6ffc924c85dbed00f72d44c81c2f2e9e3ec9528bdd1aeea21884c4
+  sha256: 27aa449ef9174c0563c5905800bc85eb1106c3470a3075e3d8040e4eda782e94
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
