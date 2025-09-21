@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-webshot2-feed
 
 Home: https://github.com/rstudio/webshot2
 
-Package license: GPL-2.0-only
+Package license: MIT
 
 Summary: Takes screenshots of web pages, including Shiny applications and R Markdown documents. 'webshot2' uses headless Chrome or Chromium as the browser back-end.
 
